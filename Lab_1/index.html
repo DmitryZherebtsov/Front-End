@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>My Website</title>
+
+</head>
+<body>
+
+  <header>
+    <a href="https://pl.wikipedia.org/wiki/Hello_world" class="link1">HELLO WORLD!</a>
+    <p><b>Dmytrii Zherebtsov w68189</b></p>
+  </header>
+  <hr>
+    <br>
+    <p><i>My Favourite film series:</i></p>
+    <h1> h1 =  The Fellowship of the Ring</h1>
+    <h2> h2 =  The Two Towers film</h2>
+    <h3> h3 =  The Return of the King</h3>
+    <h4> h4 =  An Unexpected Journey</h4>
+    <h5> h5 =  The Desolation of Smaug</h5>
+    <h6> h6 =  The Battle of the Five Armies</h6>
+
+
+  <section>
+    <hr>
+    <article> 
+    <p><b> I read: </b></p>
+    <aside>
+      <p><a href="https://jamesclear.com/">Here</a> you can read about the author of the book "Atomic Habits" James Clear</p>
+    </aside>
+    <ul class="books">
+        <li>"The Witcher" by Andrzej Sapkowski</li>
+        <li>"The Lord of The Rings" by J.R.R.Tolkien</li>
+        <li>"Atomic Habits" by James Clear</li>
+    </ul>
+
+    <!-- <br> -->
+  </section>
+
+  <section>
+    <p><b> I play: </b></p>
+    <aside>
+      <p><a href="https://pl.wikipedia.org/wiki/Civilization_V">Here</a> you can read Civilization V</p>
+    </aside>
+    <ol class="Games">
+        <li>Civilization V</li>
+        <li>Call of Duty</li>
+        <li>Cossaks 3</li>
+    </ol>
+  </section>
+  <br>
+</article>
+<hr>
+  <!--
+    <table style="width:100%">
+        <tr>
+          <td>2011 – obecnie</td>
+          <th>obecnie WSIZ</th>
+        </tr>
+        <tr>
+          <td>2008 – 2011</td>
+          <th>Liceum ogólnokształcące</th>
+        </tr>
+        <tr>
+            <td>2002 – 2008</td>
+            <th>Szkoła podstawowa</th>
+        </tr>
+      </table> -->
+
+      <br>
+      
+      <table class="tg">
+          <tr>
+            <td>1</td>
+            <th rowspan="2">2+5</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <th colspan="2" rowspan="2">8+9+11+12</th>
+          </tr>
+          <tr>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td colspan="2">13</td>
+            <td>14</td>
+          </tr>
+        </table>
+      
+
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/08/boromir-meme-featured.jpg" title="obrazek" alt="Obrazek">
+        <br><hr>
+
+        <a href="file:///D:/Lab_1/Ul%20Ksi%C4%85%C5%BCki.html">Ulubione Seriale</a>  
+        <p><a href="file:///D:/Lab_1/Ul%20Seriale.html">Ulubione Książki</a></p>
+        <hr>
+
+        <h2>Wypełnij:</h2>
+        <form action="" method="get">
+          <div>
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">Enter your  email:  </label>
+            <input type="email">
+          </div>
+
+          <label for="html">Do you want to get daily news?</label>
+          <input type="checkbox" id="html"><br>
+          
+          <label for="html">Do you want to get 40% discount?</label>
+          <input type="radio" id="html"><br>
+
+          <label for="birth">Birthday:</label>
+          <input type="date" id="birth" name="birth">
+
+          <div class="form-example">
+            <input type="submit" value="Subscribe!">
+          </div>
+        </form>
+
+        <footer class="footer">
+          <a href="https://ua.uitm.edu.eu/" class="linkf">WSIZ</a>
+          <a href="https://wu.wsiz.edu.pl/Account/Login" class="linkf">Wirtualna Uczelnia</a>
+          <a href="https://moodle.wsiz.edu.pl/my/" class="linkf">Moodle</a>
+        </footer> 
+
+    
+
+<style>
+      th, td {
+          border:1px solid black;
+          padding:  20px 50px 20px 50px;
+      }
+      .link1{
+          color: red;
+          font-size: 35px;
+          margin: auto;
+      }
+      .link1:hover {
+          background-color: blue;
+          font-size: 35px;
+          text-align: center;
+        }
+      body {
+          margin: auto;
+          width: 1200px; 
+          padding: 30px;
+          font-family: 'Lexend Deca', sans-serif; 
+          color: #2E475D;    
+        }
+      table{
+          margin: auto;
+        }
+      .tg{
+        margin-top: 20px;  
+        padding: 10px;
+      }
+      
+      img{
+          margin: auto;
+          width: 1200px;
+      }
+      .footer{
+        display: inline-flex;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #2E475D;
+      }
+      .linkf{
+        color: black;
+        padding: 40px;
+        font-weight: bold;
+      }
+      .linkf:hover{
+        color: antiquewhite;
+        background-color: #486f92a6;
+      }
+      a{
+        text-decoration: none;
+        color: blue;
+      }
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        float:right;
+        font-style: italic;
+        background-color: lightgray;
+
+}
+
+</style>
+</html>
