@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Książki</title>
+  </head>
+  <body>
+    <style>
+    *{
+      /* border: 1px solid red !important; */
+      font-family: "Inter", sans-serif;
+    } 
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+      font-size: 50px;
+    }
+    h4{
+      font-size: 30px;
+    }
+    header{
+      display: flex;
+      background-color: rgb(255, 255, 255) !important;
+      position: sticky;
+      top: 0;
+      left: 0;
+      gap: 20px;
+      box-shadow: 0 0 10px 2px #353535;
+      margin: 20px 120px;
+      padding: 10px 10px 10px 30px;
+      z-index: 100;
+    }
+    section:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      height: calc(100vh - 150px);
+      text-align: left;
+    }
+    .sect1{
+      margin: 0px 0px 5em 5em;
+    }
+    .list{
+      list-style: none;
+      display: flex;
+      margin-left: 300px;
+    }
+    header .list_nav {
+      display: flex;
+      /* width: 1000px;  */
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    }
+    header nav ul {
+      gap: 20px;
+    }
+    a{
+      text-decoration: none;
+    }
+
+/* .image {
+  flex: 1;
+} */
+.image img {
+  flex: 1;
+  max-width: 80%;
+}
+    </style>
+    <header>
+      <div>
+        <h2>Dmytrii Zherebtsov</h2>
+      </div>
+      <nav class="list_nav">
+        <ul class="list">
+          <li><a style="color: #000;" href="../index.html">Strona główna</a></li>
+          <li>
+            <a style="color: #000;" href="../seriale/index.html" >Ulubione seriale</a>
+          </li>
+          <li><a style="color: rgb(100, 230, 100);" href="../ksiazki/index.html">Ulubione książki</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sect1">
+          <div>
+            <h1>
+              <span style="position: absolute;">Dmytrii Zherebtsov's</span><br>strona personalna
+            </h1>
+            <span>Cześć! Jestem Dima i
+              <span>lubię programować</span></span>
+          </div>
+          <div class="image">
+            <img src="../images/main.jpg" alt="Obrazek komputera" align="right">
+          </div>
+      </section>
+<br>
+      <article class="sect1">
+        <div>
+          <h4>Moje ulubione książki</h4>
+          <ul>
+            <ul>
+              <li>
+                <a href="https://pl.wikipedia.org/wiki/W%C5%82adca_Pier%C5%9Bcieni">Władca Pierścieni</a>
+              </li>
+              <li>
+                <a href="https://pl.wikipedia.org/wiki/Wied%C5%BAmin">
+                  Wiedźmin</a>
+              </li>
+              <li>
+              <a href="https://pl.wikipedia.org/wiki/Hrabia_Monte_Christo">
+                Hrabia Monte Christo</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </article>
+    </main>
+    <aside class="sect1">Menu boczne</aside>
+    <hr>
+    <footer class="sect1">© 2022-2023 DmytriiZherebtsov.pl</footer>
+  </body>
+</html>
+
+
