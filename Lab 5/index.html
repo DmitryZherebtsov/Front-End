@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lab_5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<!-- Rozgrzewka 
+  Obliczanie noworoczne zakończone komunikatem
+  "Szczęśliwego Nowego Roku" w dok. HTML -->
+<p id="countdown" class="NowyRok"></p>
+
+
+<h2>Zadanie 1</h2>
+<script>
+function table(){
+    // krok 1 Stworzenie tabliczki
+    document.write("<table border=\"7\">");
+
+    for(i=1; i < 11; i++){  // krok 2 pętla z {i} wykona się 10 razy
+        document.write(`<tr><td> ${i} </td>`); // krok 3 Stworzenie kolumn i wiersze
+
+        for(j=1; j<11; j++){ // krok 3 pętla z {j} wykona się 10 razy
+
+            if(j != 1){ // Jeśli j nie równa się 1 - wykona się kod poniżej
+                document.write(`<td> ${i*j} </td>`) // tworzy komórkę dla liczby i zapisuje iloczyn i*j
+            }
+        }
+        document.write("</tr>"); // krok 3 koniec
+    }
+    // koniec kroku 1
+    document.write("</table>")
+}
+table(); //wywołanie funkcji
+</script>
+
+<br>
+
+<h2>Zadanie 2</h2>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
