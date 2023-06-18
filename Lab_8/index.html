@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="form" name="userForm">
+        <h1 class="form_title">Formularz</h1>
+
+        <div class="form_group">
+            <label for="name"  class="form_label"></label>
+            <input id="user_name" name="userName" class="form_input" type="text" placeholder="Imię" 
+            required oninvalid="this.setCustomValidity('Pole NIE posiada wartości!')" 
+            oninput="this.setCustomValidity('')">
+
+            <p onclick="check()" class="message" id="demo"></p>
+        </div>
+
+        <div class="form_group">
+            <label for="lastName" class="form_label"></label>
+            <input class="form_input" type="text" placeholder="Nazwisko" required 
+            oninvalid="this.setCustomValidity('Pole NIE posiada wartości!')" 
+            oninput="this.setCustomValidity('')">
+        </div>
+
+        <div class="form_group">
+            <label class="form_label" for="email"></label>
+            <input class="form_input" type="email" id="email_input" 
+            placeholder="Email" onblur="checkEmailValidity()" required>
+        </div>
+
+        <div class="form_group">
+            <label class="form_label" for="password"></label>
+            <input class="form_input" type="password" placeholder="Hasło" id="password_input" onkeyup="checkPassword()" required
+            oninvalid="this.setCustomValidity('Pole NIE posiada wartości!')" 
+            oninput="this.setCustomValidity('')">
+            <p id="password_strength"></p>
+        </div>
+
+        <div class="form_group">
+            <label class="form_label" for="num"></label>
+            <input class="form_input" type="text" name="formLen" id="tel" pattern="[0-9]*" inputmode="numeric"
+                maxlength="12" placeholder="Telefon: +48 YYY-YYY-YYY" required><br>
+        </div>
+
+        <div class="form_group"> 
+            <input class="form_input" type="date" name="dateValue" required
+            oninvalid="this.setCustomValidity('Pole NIE posiada wartości!')" 
+            oninput="this.setCustomValidity('')">
+        </div>
+
+        <div class="form_group">
+            <label>Kraj: </label>
+            <select name="country" required onchange="toggleWojewodztwoField()">
+                <option></option>
+                <option value="Polska">Polska</option>
+                <option value="Ukraina">Ukraina</option>
+                <option value="Litwa">Litwa</option>
+                <option value="Niemcy">Niemcy</option>
+            </select>
+            <span class="error"></span>
+        </div>
+
+        <div class="form_group" id="wojewodztwoGroup">
+            <label>Województwo: </label>
+            <input type="text" name="wojewodztwo" required>
+            <span class="error"></span>
+        </div>
+
+        <div class="form_group">
+            <label class="form_label_płec" for="sex">Płec: </label>
+            <input class="form_sex" type="radio" name="M-W" id="sex" required>
+            <label for="Man">M</label>
+            <input class="form_sex" type="radio" name="M-W" id="sex" required>
+            <label for="Women">K</label>
+        </div>
+
+        <div class="form_group">
+            <label for="addressCheckbox">Adres zamieszkania</label>
+            <input type="checkbox" id="addressCheckbox" checked disabled>
+        </div>
+    
+        <div class="form_group">
+            <label for="addressCheckbox">Adres korespondencyjny</label>
+            <input type="checkbox" id="addressCheckbox" checked disabled>
+        </div>
+
+        <button class="form_button" onclick="myFunction()">Zapisz</button>
+        <!-- <input class="form_button" type="submit" name="submit" value="Zapisz" > -->
+
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
